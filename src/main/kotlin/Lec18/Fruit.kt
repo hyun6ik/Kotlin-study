@@ -43,7 +43,7 @@ fun main() {
 
     // 매핑의 결과가 null이 아닌것만 가져오고 싶다면?
     fruits.filter { fruit -> fruit.name == "사과" }
-        .mapNotNull { fruit -> fruit.nullOrValue() }
+//        .mapNotNull { fruit -> fruit.nullOrValue() }
 
     // all : 조건을 모두 만족하면 true 그렇지 않으면 false
     val isAllApple = fruits.all { fruit -> fruit.name == "사과" }
