@@ -28,17 +28,23 @@ fun main() {
     val appleList3 = filterFruits(fruits) { it.name == "사과" }
 }
 
+//private fun filterFruits(
+//    fruits: List<Fruit>,
+//    filter: (Fruit) -> Boolean
+//): List<Fruit> {
+//    val results = mutableListOf<Fruit>()
+//    for (fruit in fruits) {
+//        if (filter(fruit)) {
+//            results.add(fruit)
+//        }
+//    }
+//    return results
+//}
+
 private fun filterFruits(
     fruits: List<Fruit>,
     filter: (Fruit) -> Boolean
 ): List<Fruit> {
-    val results = mutableListOf<Fruit>()
-    for (fruit in fruits) {
-        if (filter(fruit)) {
-            results.add(fruit)
-        }
-    }
-    return results
+    return fruits.filter(filter)
 }
-
 
